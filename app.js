@@ -27,7 +27,7 @@ const l1Catalog=[
 ];
 const levelNames={L2:"Constitutive legal form",L3:"Constitutional subtype",L4:"Special statutory type / status",L5:"Primary functional role"};
 const host=document.getElementById("levels"),l1wrap=document.createElement("label");
-l1wrap.innerHTML='L1 · Broad legal nature *<select id="pickL1" required><option value="">Choose broad legal nature</option>'+l1Catalog.map((row,i)=>'<option value="'+i+'">'+row[0]+'</option>').join("")+'</select>';host.append(l1wrap);
+l1wrap.innerHTML='L1 · Broad legal nature *<select id="pickL1" required>'+l1Catalog.map((row,i)=>'<option value="'+i+'">'+row[0]+'</option>').join("")+'</select>';host.append(l1wrap);$("pickL1").selectedIndex=-1;
 const $=id=>document.getElementById(id),note=$("note"),extra=$("extra"),ex=$("extras");let currentType="",selectedL1="";
 function resetDynamic(){host.querySelectorAll(".dynlevel").forEach(x=>x.remove());note.classList.add("hidden");note.textContent=""}
 function available(type,level){if(!type)return false;if(type==="Body Corporates"){const l2=$("pickL2"),l3=$("pickL3"),l4=$("pickL4");if(level==="L3")return !!l2&&l2.value==="Company";if(level==="L4")return !!l2&&l2.value==="Company"&&!!l3&&!!l3.value;if(level==="L5"){if(!l2||!["Company","Statutory Corporation","Foreign-incorporated body corporate"].includes(l2.value))return false;return l2.value==="Company"?!!l4&&!!l4.value:true}return !!T[type][level]}
