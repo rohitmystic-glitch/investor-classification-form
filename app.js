@@ -8,7 +8,7 @@ const T={
   "Government":{L2:["Central Government","State Government"]},
   "Local Authority":{L2:["Municipal Corporation","Panchayats"]},
   "AJP":{L2:["Juristic person recognised by personal law or courts","Juristic person recognised by statute without incorporation","Other Verified Source of Juridical Recognition"],L4:["Religious Endowment / Customary Administration","Court-approved Scheme / Administration","Statutory Administration","Other Authorised Arrangement"],L5:["Religious Endowment Management","Asset Holding & Investment","Charitable Activities","Other Authorised Function"]},
-  "Foreign Investor":{L2:["Foreign Citizen – Non-OCI Cardholder","Foreign Company / Body Corporate – Offshore Investor","Foreign LLP / Equivalent Incorporated Entity","Foreign Statutory Corporation","Foreign Trust","Foreign Partnership / Other Unincorporated Entity","Others"]},
+  "Foreign Investor":{L2:["Foreign Citizen – Non-OCI Cardholder","Foreign Company / Body Corporate – Offshore Investor"]},
   "Co Operative Society":{L2:["Multi-State Co-operative Society","State Co-operative Society"],L3:["Primary society","Federal society"],L5:["Co-operative Bank – Urban / State / District","Co-operative Housing Society","Co-operative Credit Society","Agricultural / Consumer / Producer / Other Co-operative","Agriculture & rural development bank (SCARDB / PCARDB)","Primary agricultural credit society (PACS)","Non-agricultural credit / thrift society","Agricultural, dairy, marketing & processing co-operative","Consumer co-operative","Other co-operative (not elsewhere classified)"]}
 };
 const l1Catalog=[
